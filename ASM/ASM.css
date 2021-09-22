@@ -1,0 +1,236 @@
+.container{
+    width: 1000px;
+    margin: 0px auto;
+    padding: 0px;
+    min-height: 400px;
+}
+.container.header{
+    padding: 0px;
+    margin: 0px;
+}
+.container>header>img{
+width: 100%;
+}
+.container>nav{
+    height: 80px;
+    background-color: greenyellow;
+    padding: 0px 5px;
+    margin: 0px;
+    line-height: 40px;
+}
+.container>nav>a{
+    color: hotpink;
+    text-decoration: none;
+}
+.container>nav>a:hover{
+    text-transform: uppercase;
+}
+main{
+
+    min-height: 200px;
+   
+}
+main>article{
+    float: left;
+    width: 75%;
+}
+main>aside{
+    float: right;
+    width: 25%;
+}
+.container>footer{
+    clear: both;
+    height: 70px;
+    border-top: 3px dotted greenyellow;
+    background-color: hotpink;
+    text-align: center;
+}
+.containerCC{
+    margin-left: 30%;
+    background-color: rgb(146, 42, 42);
+    width: 300px;
+    height: fit-content;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 4px;
+}
+#kq{
+    margin-left: 9%;
+    width: 80%;
+    height: 120px;
+    border: 2px solid snow;
+    border-radius: 10px;
+}
+#solangiai{
+
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  article .img-collect{
+    width: 100%;
+    height: fit-content;
+    border: 2px solid #ccc;
+    /*box-shadow: 5px 5px 5px #ccc;*/
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+  }
+  article .img-collect img{
+    max-width: 100%;
+    height: 400px;
+  }
+  article .img-collect p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+  article .img-collect #privious{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    border-radius: 10px 0 0 10px;
+  }
+  article .img-collect #next{
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    border-radius: 0 10px 10px 0;
+  }
+  article .img-collect .go{
+    width: 50px;
+    height: 35px;
+    border: 1px solid #ccc;
+    box-shadow: inset 5px 5px 25px #ccc;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  article .img-collect .go:hover{
+    background: #ccc;
+  }
+  article .img-collect .go i{
+    font-size: 18px;
+  }
+
+#hanghoa{
+    width: fit-content;
+    background-color: aqua;
+    text-align: center;
+}
+#hh{
+  margin-left: 40px;
+}
+td{
+    border: 3px solid red;
+}
+
+
+* {box-sizing: border-box}
+
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.containersignup {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.radio{
+    margin-left: 25%;
+    text-align: center;
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.radio_input{
+display: none;
+cursor: pointer;
+}
+.radio_label{
+    width: 200px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #f1f1f1;
+    background: #04AA6D;
+    cursor: pointer;
+    transition: backgound 0.1s;
+}
+.radio_label:not(:last-of-type){
+    border-right: 1px solid #00a2ff;
+}
+.radio_input:checked+.radio_label{
+    background: #00a2ff;
+}
+.like{
+  text-align: center;
+}
+.title{
+  font-size: 30px;
+}
+.note{
+ 
+}
+.nation{
+ position: relative;
+ width: 40px;
+ height: 20px;
+ line-height: 3;
+ background: #f1f1f1;
+ border-radius: 4px;
+}

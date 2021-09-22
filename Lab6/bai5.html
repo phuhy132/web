@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1042</title>
+    <script >
+        var name = "Nguyễn Phú Hy";
+        var num= "PS9395";
+        var birth = "04/10/2000";
+        
+            </script>
+        
+    </script>
+    <link rel="stylesheet" href="lab.css">
+  <style>
+     h2{ color: blue;}
+        #sub{color: brown;font-weight: bolder; background-color: coral;}
+  </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>Môn học java cơ sở</div>
+        <img src="../Javascript-shopping-cart-1.png" alt="">
+    </header>
+    <nav>
+        <a href="../indelx.html"> Trang chủ</a>       
+        <a href="Lab1/lab2.html">Lab2</a>
+        <a href="Lab1/lab3.html">Lab3</a>
+        <a href="Lab1/lab4.html">Lab4</a>
+    </nav>
+    <main>
+        <article>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <form name="frm1" onsubmit="return kiemtra()" class="col-6 mx-auto border border-primary"> <h4 class="m-0 p-2 text-center">THÊM NHÂN VIÊN</h4> <div class="form-group">
+        <label> Họ Tên</label> <input type="text" name="ht" class="form-control bg-warning">
+       </div> <div class="form-group">
+        <label>Số CMND</label> <input type="text" name="cmnd" class="form-control bg-primary">
+       </div> 
+       <div class="form-group">
+        <label> Tỉnh</label>
+        <select name="tinh" class="form-control bg-info">
+        <option value="0">Chọn tỉnh</option>
+        <option value="1">TPHCM</option>
+        <option value="2">Hà nội</option>
+        <option value="3">Cần Thơ</option>
+        </select>
+       </div> 
+       <div class="form-group">
+        <label> Thông tin bổ sung</label>
+        <textarea name="bosung" class="form-control bg-warning" rows="4"></textarea>
+       </div> 
+       <div class="form-group">
+        <div id="loi"></div> <button class="btn btn-primary">Lưu Thông tin</button>
+       </div>
+       </form>
+            <script>
+            function kiemtra(){
+    var ht= document.frm1.ht.value;
+    var cmnd= document.frm1.cmnd.value;
+    var tinh= document.frm1.tinh.value;
+    var bosung= document.frm1.bosung.value;
+    var loi="";
+    if (ht.length<3 || ht.length>30){
+        loi=loi + "Họ tên phải nhập từ 3 đến 30 ký tự<br>";
+    }
+    if (cmnd.length!=9){
+        loi=loi + "CMND phải đúng 9 ký tự<br>";
+    }
+    var s =parseInt(cmnd);
+    if (tinh==0){
+        loi=loi + "Bạn chưa chọn tỉnh<br>";
+    }
+    if (bosung.length<10 || bosung.length>100){
+        loi=loi + "Hãy nhập thông tin bổ sung từ 10 đến 100 ký tự<br>";
+    }
+    if (loi.length>0){
+        document.getElementById("loi").innerHTML= loi;
+    }
+    return false;
+}
+            </script>
+        </article>
+        <aside>
+            <div class="card">
+                <div class="title">Thông tin cá nhân</div>
+                <div>
+                    <p><span>Họ tên:</span><b id="name">
+                        <script>
+                            document.write(name);
+                        </script>
+                    </b></p>
+                    <p><span>Mã SV</span><b id="num">
+                        <script>
+                            document.write(num);
+                        </script>
+                    </b></p>
+                    <p><span>Ngày sinh:</span><b id="birth">
+                        <script>
+                            document.write(birth);
+                        </script>
+                    </b></p>
+                </div>
+                <a href="bai1.html">bài 1</a>
+                <a href="bai2.html">bài 2</a>
+                <a href="bai3.html">bài 3</a>
+                <a href="bai4.html">bài 4</a>
+                <a href="bai5.html">bài 5</a>
+                <a href="bai6.html">bài 6</a>
+        
+            </div>
+        </aside>
+    </main>
+  
+    <footer>
+        <p>được thiết kế bởi <em id="author"></em><br  />&COPY;2021</p>
+    </footer>
+</div>
+<script>
+    document.getElementById("author").innerHTML=name;
+</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+
+body
+.container{
+    width: 1000px;
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+}
+#header_top{
+    width: 100%;
+    height: 80px;
+background-color: rgb(96, 201, 243);
+}
+#logo{
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    margin-left: 300px;
+}
+#logo_name{
+    top: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+}
+#timkiem{
+    position: relative;
+    border: none;
+    width: 422px;
+    height: 30px;
+    bottom:17px;
+    left: 40px;
+    z-index:5;
+}
+.form_control{
+    position: relative;
+    top: 20px;
+    float: left;
+    width: 600px;
+	border-radius: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	
+}
+form{
+	margin-left: 20px;
+}
+input[type=text],input[type=email] {
+  width: 90%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+select{
+	width: 94%;
+	padding: 8px 10px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+}
+input[type=submit] {
+  width: 94%;
+  background-color: #7d78d9;
+  color: white;
+  padding: 14px 20px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.4s;
+}
+.inp{
+	width: 90%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+.inp span{
+	margin-right: 15px;
+}
+input[type=submit]:hover {
+  background-color: #493eff;
+}
+input[type=radio],input[type=checkbox] {
+  margin-right: 5px;
+}
+label{
+  font-weight: bold;
+  margin-top: 8px;
+  display: block;
+}
+textarea{
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+	margin-top: 8px;
+  width: 482px;
+}
+.error{
+  font-size: 12px;
+  color: red;
+}
+input[type=button]{
+    width: 200px;
+    height: 40px;
+}
+.left{
+margin-right: 90px;
+}
+.ke{
+    width: 100%;
+    text-align: center;
+}
+hr{
+    display: inline-block   ;
+    left: 10px;
+    width: 45%;
+}
+#thongtinthanhtoan{
+    width: 390px;
+    position: relative;
+    bottom: 880px;
+    float: right;
+   
+	border-radius: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+
+}
+#email_friend{
+display: none;
+}
+#key{
+  display: none;
+}
+#bill{
+  display: none;
+}
+#checkbox_ll{
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.row{
+  border: 1px solid rgb(199, 197, 197);
+  margin: 0;
+  min-height: 123px;
+  
+}
+.img_cart{
+  position: relative;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  width: 76.5px;
+  height: 50px;
+  
+}
+.name_item{
+  position: relative;
+  bottom: 40px;
+  font-size: 15px;
+}
+.item_status{
+  position: relative;
+  bottom: 65px;
+  right: 80px;
+  font-size: 15px;
+}
+.con_hang{
+color: rgb(37, 211, 37);
+font-size: 15px;
+}
+.delete{
+  font-size: 15px;
+  color: red;
+  cursor: pointer;
+  bottom: 44px;
+  right: 217px;
+  position: relative;
+}
+#price{
+  position: relative;
+  float: right;
+  right: 150px;
+  bottom: 30px;
+  font-weight: bold;
+}
+#nut{
+  width: 100%;
+  
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1042</title>
+    <script >
+var name = "Nguyễn Phú Hy";
+var num= "PS9395";
+var birth = "04/10/2000";
+
+    </script>
+
+    <link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>Môn học java cơ sở</div>
+        <img src="../Javascript-shopping-cart-1.png" alt="">
+    </header>
+    <nav>
+        <a href="../index.html"> Trang chủ</a>       
+        <a href="../Lab2/bai1.html">Lab2</a>
+        <a href="Lab1/lab3.html">Lab3</a>
+        <a href="Lab1/lab4.html">Lab4</a>
+    </nav>
+    <main>
+        <article>
+        
+            <h2>Bài 2 Lab 4</h2>
+        <h4>Bài 2: Thông tin sinh viên </h4>
+        <div id="dongho">Đồng Hồ</div>
+        <button onclick="battat()">bật tắt</button>
+        <script>
+                        var interval=null;
+
+            var dh = null;
+            function tg(){
+            var now =new Date;
+            var h =now.getHours();
+            var m=now.getMinutes();
+            var s= now.getSeconds();
+            var ms= now.getMilliseconds();
+            var clock =document.getElementById("dongho");
+            clock.innerHTML=h+":"+m+":"+s
+            clock.style.width="100px";
+            clock.style.backgroundColor="red";
+            clock.style.color="black";
+            clock.style.padding="10px";
+            clock.style.margin="10px 0px";
+            clock.style.fontSize="1.2em";
+            clock.style.textAlign="center";}
+            function battat(){
+                if(interval==null)interval = setInterval("tg()",1000);
+                else
+                clearInterval(interval)
+                dh=null
+            }
+       </script>
+        </article>
+        <aside>
+            <div class="card">
+                <div class="title">Thông tin cá nhân</div>
+                <div>
+                    <p><span>Họ tên:</span><b id="name">
+                        <script>
+                            document.write(name);
+                        </script>
+                    </b></p>
+                    <p><span>Mã SV</span><b id="num">
+                        <script>
+                            document.write(num);
+                        </script>
+                    </b></p>
+                    <p><span>Ngày sinh:</span><b id="birth">
+                        <script>
+                            document.write(birth);
+                        </script>
+                    </b></p>
+                </div>
+                <a href="bai1.html">bài 1</a>
+                <a href="bai2.html">bài 2</a>
+                <a href="bai3.html">bài 3</a>
+                <a href="bai4.html">bài 4</a>
+                <a href="bai5.html">bài 5</a>
+                <a href="bai6.html">bài 6</a>
+        
+            </div>
+        </aside>
+    </main>
+  
+    <footer>
+        <p>được thiết kế bởi <em id="author"></em><br  />&COPY;2021</p>
+    </footer>
+</div>
+<script>
+    document.getElementById("author").innerHTML=name;
+</script>
+</body>
+</html>

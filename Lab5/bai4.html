@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1042</title>
+    <script >
+var name = "Nguyễn Phú Hy";
+var num= "PS9395";
+var birth = "04/10/2000";
+
+    </script>
+
+<style> 
+   
+    #k{width: 300px; font-size: 1.5em;letter-spacing: 3px; font-weight: bolder;}
+    #k p{text-transform: uppercase; margin: auto;}
+    .abc {background-color:rgb(100, 237, 237) ;color: rgb(255, 71, 71); border: 1px solid rgb(0, 255, 255);padding: 20px;}
+    .xyz {background-color:rgb(49, 0, 139);color:rgb(255, 190, 106); border: 1px solid rgb(8, 252, 252);padding: 20px;}
+    #btn {width: 120px;height: 36px;background-color: rgb(255, 104, 49);margin-top: 10px;}
+    </style>
+    <link rel="stylesheet" href="lab5.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>Môn học java cơ sở</div>
+        <img src="../Javascript-shopping-cart-1.png" alt="">
+    </header>
+    <nav>
+        <a href="../index.html"> Trang chủ</a>       
+        <a href="../Lab2/bai1.html">Lab2</a>
+        <a href="Lab1/lab3.html">Lab3</a>
+        <a href="Lab1/lab4.html">Lab4</a>
+    </nav>
+    <main>
+      
+        <article>
+        <div id="ketqua"></div>
+        <form>
+             <h2> BẠN THÍCH LÀM GÌ :</h2>
+    <div id="k"></div>
+        <form>
+            <input type="checkbox" name="thich" value="cafe"> Cafe<br>
+            <input type="checkbox" name="thich" value="nghe nhạc"> Nghe nhạc<br>
+            <input type="checkbox" name="thich" value="xem phim"> Xem phim<br>
+            <input type="checkbox" name="thich" value="game"> Game<br>
+            <input type="checkbox" name="thich" value="chơi"> Chơi<br>
+            <button id="btn" type="button" onclick="check()"> Chọn</button>
+        </form><hr>
+        </form>
+        </article>
+        <aside>
+            <div class="card">
+                <div class="title">Thông tin cá nhân</div>
+                <div>
+                    <p><span>Họ tên:</span><b id="name">
+                        <script>
+                            document.write(name);
+                        </script>
+                    </b></p>
+                    <p><span>Mã SV</span><b id="num">
+                        <script>
+                            document.write(num);
+                        </script>
+                    </b></p>
+                    <p><span>Ngày sinh:</span><b id="birth">
+                        <script>
+                            document.write(birth);
+                        </script>
+                    </b></p>
+                </div>
+                <a href="bai1.html">bài 1</a>
+                <a href="bai2.html">bài 2</a>
+                <a href="bai3.html">bài 3</a>
+                <a href="bai4.html">bài 4</a>
+                <a href="bai5.html">bài 5</a>
+                <a href="bai6.html">bài 6</a>
+                <a href="bai7.html">bài 7</a>
+                <a href="bai8.html">bài 8</a>
+        
+            </div>
+        </aside>
+    </main>
+  
+    <footer>
+        <p>được thiết kế bởi <em id="author"></em><br  />&COPY;2021</p>
+    </footer>
+</div>
+<script>
+    function check(){
+    arr = document.getElementsByName("thich");
+    var kk =document.getElementById("k");
+    var dem =0;
+    kk.innerHTML="";
+    for (i=0; i<arr.length ;i++){
+        if (arr[i].checked){
+            var value = arr[i].value;
+            var node = document.createTextNode(value);
+            var tagp = document.createElement("p")
+            tagp.appendChild(node);
+            kk.appendChild(tagp);
+            dem++;
+        }
+    }
+    if (dem>0){
+        kk.className="abc";
+    } else{
+        kk.innerHTML=" Chưa chọn mục nào ";
+        kk.className="xyz";
+    }
+}
+    document.getElementById("author").innerHTML=name;
+</script>
+</body>
+</html>

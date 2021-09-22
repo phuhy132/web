@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1042</title>
+    <script></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    
+    <link rel="stylesheet" href="la7.css">
+    <script >
+        var name = "Nguyễn Phú Hy";
+        var num= "PS9395";
+        var birth = "04/10/2000";
+        
+            </script>
+</head>
+<body ng-app="b2">
+<div class="container">
+    <header>
+        <div>Môn học java cơ sở</div>
+        <img src="../Javascript-shopping-cart-1.png" alt="">
+    </header>
+    <nav>
+        <a href="../indelx.html"> Trang chủ</a>       
+        <a href="Lab1/lab2.html">Lab2</a>
+        <a href="Lab1/lab3.html">Lab3</a>
+        <a href="Lab1/lab4.html">Lab4</a>
+    </nav>
+    <main>
+        <article>
+            <div   ng-app="b3">
+                <div  ng-controller="ctr1">
+                    <form name="frm" class="col-5 mx-auto border border-primary">
+                        <div class="form-group">
+                            <label>Tên SP</label>
+                            <input name="tensp" ng-model="tensp"  required minlength="2" maxlength="30"  class="form-control bg-primary">
+                            <em ng-if="frm.tensp.$invalid" class="text-danger h6">Nhập tên sản phẩm từ 2 đến 30 ký tự</em>
+                        </div>
+                        <div class="form-group">
+                            <label>Số lượng</label>
+                            <input name="soluong" ng-model="soluong" type="number" min="1"  class="form-control bg-warning" >  
+                            <em ng-if="frm.soluong.$invalid || soluong>100" class="text-danger h6">Nhập số lượng từ 1 đến 100</em>    
+                        </div>
+                        <div class="form-group">
+                            <label>Nhà sản xuất</label>
+                            <select name="nsx" ng-model="nsx" class="form-control bg-secondary text-white">
+                                <em ng-if="!nsx || nsx==0" class="text-danger h6">Hãy chọn 1 nhà sx</em>
+
+                                <option value="0">Chọn NSX</option>
+                                <option value="1">Samsung</option>
+                                <option value="2">Toshiba</option>
+                                <option value="3">HTC</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Tình trạng</label>
+                            <fieldset class="border border-secondary p-3">
+                                <input name="tinhtrang" ng-model="tinhtrang"  type="radio"  value="1"> Hàng cũ &nbsp;
+                                <em ng-if="!tinhtrang" class="text-danger h6"><br>Hàng cũ hay mới?</em>
+                                <input name="tinhtrang" ng-model="tinhtrang"  type="radio"  value="2"> Hàng mới
+                                <em ng-if="!tinhtrang" class="text-danger h6"><br>Hàng cũ hay mới?</em>
+                            </fieldset>
+                        </div>
+                        <div class="form-group">
+                            <label>Màu sắc</label>
+                            <fieldset class="border border-secondary p-3">
+                                <input value="do" ng-model="maudo" type="checkbox"> Đỏ &nbsp; 
+                                  
+                                <input value="den" ng-model="mauden" type="checkbox"> Đen  &nbsp; 
+                                <input value="trang" ng-model="mautrang" type="checkbox"> Trắng 
+                                <em ng-if="!maudo && !mauden && !mautrang " class="text-danger h6"><br>Màu gì vậy?</em> 
+                            </fieldset>
+                        </div>
+                        <div class="form-group">
+                            <button  class="btn btn-info">Nhập sản phẩm</button>
+                        </div>
+                    </form>
+            </div>
+         
+<script>
+    app= angular.module("b3",[]);
+    app.controller("ctr1",xuly);
+    function xuly($scope){
+        //code xử lý
+    }
+</script>
+        </article>
+        <aside>
+            <div class="card">
+                <div class="title">Thông tin cá nhân</div>
+                <div>
+                    <p><span>Họ tên:</span><b id="name">
+                        <script>
+                            document.write(name);
+                        </script>
+                    </b></p>
+                    <p><span>Mã SV</span><b id="num">
+                        <script>
+                            document.write(num);
+                        </script>
+                    </b></p>
+                    <p><span>Ngày sinh:</span><b id="birth">
+                        <script>
+                            document.write(birth);
+                        </script>
+                    </b></p>
+                </div>
+                <a href="bai1.html">bài 1</a>
+                <a href="bai2.html">bài 2</a>
+                <a href="bai3.html">bài 3</a>
+                <a href="bai4.html">bài 4</a>
+                <a href="bai5.html">bài 5</a>
+                <a href="bai6.html">bài 6</a>
+                <a href="bai7.html">bài 7</a>
+                <a href="bai8.html">bài 8</a>
+        
+            </div>
+        </aside>
+    </main>
+  
+    <footer>
+        <p>được thiết kế bởi <em id="author"></em><br  />&COPY;2021</p>
+    </footer>
+</div>
+<script>
+    document.getElementById("author").innerHTML=name;
+</script>
+</body>
+</html>

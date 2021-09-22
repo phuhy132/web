@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1042</title>
+    <script >
+var name = "Nguyễn Phú Hy";
+var num= "PS9395";
+var birth = "04/10/2000";
+
+    </script>
+
+    <link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>Môn học java cơ sở</div>
+        <img src="../Javascript-shopping-cart-1.png" alt="">
+    </header>
+    <nav>
+        <a href="../index.html"> Trang chủ</a>       
+        <a href="../Lab2/bai1.html">Lab2</a>
+        <a href="Lab1/lab3.html">Lab3</a>
+        <a href="Lab1/lab4.html">Lab4</a>
+    </nav>
+    <main>
+        <article>
+            <h2>Bài 4 Lab 4</h2>
+            <h4>Bài 4: Thực Hành với Đối tượng sinh viên </h4>
+            <button id="btn1" onclick="mowin()">mở win</button>
+            <button id="btn2" onclick="inan()">In Ấn</button>
+            <button id="btn3" onclick="move()">Di chuyển một chút</button>
+            <button id="btn4" onclick="mtopoint()">Di chuyển tới điểm</button>
+            <button id="btn5" onclick="closewin()">Close win</button>
+            
+            <script>
+                var lab4;
+                function mowin() {
+                    lab4=window.open("thongtin.html","tt","width=400,height=200px")
+                    lab4.focus();
+                }
+                function move(){
+                    lab4.moveBy(250, 250);
+                    lab4.focus();
+                }
+                function mtopoint(){
+                    var x=prompt("nhập x");
+                    var y=prompt("nhập y");
+                    lab4=moveTo(x,y);
+                    lab4.focus()
+                }
+                function inan(){
+                    lab4=print();
+                }
+                function closewin(){
+                    lab4=window.close();
+                  
+                }
+            </script>
+    
+        </article>
+        <aside>
+            <div class="card">
+                <div class="title">Thông tin cá nhân</div>
+                <div>
+                    <p><span>Họ tên:</span><b id="name">
+                        <script>
+                            document.write(name);
+                        </script>
+                    </b></p>
+                    <p><span>Mã SV</span><b id="num">
+                        <script>
+                            document.write(num);
+                        </script>
+                    </b></p>
+                    <p><span>Ngày sinh:</span><b id="birth">
+                        <script>
+                            document.write(birth);
+                        </script>
+                    </b></p>
+                </div>
+                <a href="bai1.html">bài 1</a>
+                <a href="bai2.html">bài 2</a>
+                <a href="bai3.html">bài 3</a>
+                <a href="bai4.html">bài 4</a>
+                <a href="bai5.html">bài 5</a>
+                <a href="bai6.html">bài 6</a>
+        
+            </div>
+        </aside>
+    </main>
+  
+    <footer>
+        <p>được thiết kế bởi <em id="author"></em><br  />&COPY;2021</p>
+    </footer>
+</div>
+<script>
+    document.getElementById("author").innerHTML=name;
+</script>
+</body>
+</html>

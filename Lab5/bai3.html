@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1042</title>
+    <script >
+var name = "Nguyễn Phú Hy";
+var num= "PS9395";
+var birth = "04/10/2000";
+
+    </script>
+
+<style>
+    button{
+        width:80px;
+        height:80px;
+    }
+</style>
+    <link rel="stylesheet" href="lab5.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>Môn học java cơ sở</div>
+        <img src="../Javascript-shopping-cart-1.png" alt="">
+    </header>
+    <nav>
+        <a href="../index.html"> Trang chủ</a>       
+        <a href="../Lab2/bai1.html">Lab2</a>
+        <a href="Lab1/lab3.html">Lab3</a>
+        <a href="Lab1/lab4.html">Lab4</a>
+    </nav>
+    <main>
+      
+        <article>
+            <script>
+                var count=0;
+                var flag = true;
+                function mark(index){
+                var button =document.getElementsByTagName("button")[index];
+                button.innerText=flag? "X":"O";
+                button.style.background=flag?"auqua":"yellow";
+                button.style.fontSize="30px"
+                button.setAttribute("disabled","true");
+                flag=!flag;
+                count++;
+                if(count==8){
+                    alert("Game over")
+                    location.reload();
+                }
+            }
+            </script>
+            <h3>TICTACTOE GAME</h3>
+            <table style="text-align:center">
+                <tr>
+                    <td><button onclick="mark(0)"></button></td>
+                    <td><button onclick="mark(1)"></button></td>
+                    <td><button onclick="mark(2)"></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="mark(3)"></button></td>
+                    <td><button onclick="mark(4)"></button></td>
+                    <td><button onclick="mark(5)"></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="mark(6)"></button></td>
+                    <td><button onclick="mark(7)"></button></td>
+                    <td><button onclick="mark(8)"></button></td>
+                </tr>
+            </table> 
+       
+   
+        </article>
+        <aside>
+            <div class="card">
+                <div class="title">Thông tin cá nhân</div>
+                <div>
+                    <p><span>Họ tên:</span><b id="name">
+                        <script>
+                            document.write(name);
+                        </script>
+                    </b></p>
+                    <p><span>Mã SV</span><b id="num">
+                        <script>
+                            document.write(num);
+                        </script>
+                    </b></p>
+                    <p><span>Ngày sinh:</span><b id="birth">
+                        <script>
+                            document.write(birth);
+                        </script>
+                    </b></p>
+                </div>
+                <a href="bai1.html">bài 1</a>
+                <a href="bai2.html">bài 2</a>
+                <a href="bai3.html">bài 3</a>
+                <a href="bai4.html">bài 4</a>
+                <a href="bai5.html">bài 5</a>
+                <a href="bai6.html">bài 6</a>
+                <a href="bai7.html">bài 7</a>
+                <a href="bai8.html">bài 8</a>
+        
+            </div>
+        </aside>
+    </main>
+  
+    <footer>
+        <p>được thiết kế bởi <em id="author"></em><br  />&COPY;2021</p>
+    </footer>
+</div>
+<script>
+    document.getElementById("author").innerHTML=name;
+</script>
+</body>
+</html>

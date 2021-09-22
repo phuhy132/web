@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab8</title>
+    <style>
+        *{
+            padding:0;
+            box-sizing: border-box;
+            margin:0;
+            
+        }
+        body{
+            background-color: rgb(228, 176, 118);
+            width: 100%;
+            height:100vh;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #form-1{
+             display: flex;
+
+        }
+        #form-1 fieldset{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           padding:0 5px;
+           width: 450px;
+           height:70px;
+           
+        }
+        #form-1 select{
+            border: 2px solid rgb(229, 195, 150) ;
+            font-size: 1.2rem;
+            height: 34px;
+            outline: none;
+
+      
+        }
+        #form-1 select:hover{
+            border: 2px solid #fff;
+            background:rgb(248, 133, 2) ;
+            
+        }
+        .btn{
+            color: #fff;
+            background: rgb(200, 221, 13);   
+            padding: 5px 0px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 140px;
+            height:34px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form-1">
+        <fieldset>
+        <select name="select" id="select">
+            <option value="0">Chọn Môn Học</option>
+            <option value="1">Bài:1 Javascript là gì?</option>
+            <option value="2">Bài:2 Biến, Toán Tử Và Biểu Thức</option>
+            <option value="3">Bài:3 Cấu Trúc Điều Khiển, Hàm và Sự Kiện</option>
+            <option value="4">Bài:4 Lập trình Hướng đối tượng và mô hình BOM</option>
+            <option value="5">Bài:5 Mô hình DOM trong javaScript</option>
+            <option value="6">Bài:6 Validate Form</option>
+            <option value="7">Bài:7 Giới thiệu javaScript frameWork</option>
+            <option value="8">Bài:8 Tập Tành Sử Dụng angularJS</option>
+        </select>
+        <a href="#" class="btn" onclick="search__lesson()">Tìm kiếm </a>
+    </fieldset>
+    </form>
+     <script src="bai2a.js"></script>
+</body>
+</html>

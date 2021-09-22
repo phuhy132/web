@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1042</title>
+    <script src="dong.js"></script>
+    
+    <script >
+var name = "Nguyễn Phú Hy";
+var num= "PS9395";
+var birth = "04/10/2000";
+
+    </script>
+
+    <link rel="stylesheet" href="ASM1.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>Môn học java cơ sở</div>
+        <img src="../Javascript-shopping-cart-1.png" alt="">
+    </header>
+    <nav>
+        <a href="../index.html"> Trang chủ</a>       
+        <a href="../Lab2/bai1.html">Lab2</a>
+        <a href="Lab1/lab3.html">Lab3</a>
+        <a href="Lab1/lab4.html">Lab4</a>
+    </nav>
+    <main>
+        <article>
+        <script>
+           
+        </script>
+            <h4>Bài 1 Lab ASM</h4>
+        <h4>ASM </h4>
+        <div class="containerCC">
+            <h4>Giải Phương Trình: ax<sup>2</sup>+bx+c=0</h4>
+            <div id="solangiai"> số lần Giải</div>
+            <hr>
+            <form id="toan" action="" onsubmit="return false">
+                <label >Nhập a:</label>
+  <input type="text" id="so1" name="so1"><br><br>
+  <label >Nhập b:</label>
+  <input type="text" id="so2" name="so2"><br><br>
+  <label >Nhập C:</label>
+  <input type="text" id="so3" name="so3"><br><br>
+  <input type="submit" id="pt" value="Giải PT" disabled="true" onclick="ptb2.giai(),xem()">
+  <input type="submit" value="Cho số" onclick="ptb2.choso()">
+            </form>
+            <div id="kq">
+                
+            </div>
+            <div id="time" onload="tg()"></div>
+        </div>
+        <script src="toan.js"></script>
+        </article>
+        <aside>
+            <div class="card">
+                <div class="title">Thông tin cá nhân</div>
+                <div>
+                    <p><span>Họ tên:</span><b id="name">
+                        <script>
+                            document.write(name);
+                        </script>
+                    </b></p>
+                    <p><span>Mã SV</span><b id="num">
+                        <script>
+                            document.write(num);
+                        </script>
+                    </b></p>
+                    <p><span>Ngày sinh:</span><b id="birth">
+                        <script>
+                            document.write(birth);
+                        </script>
+                    </b></p>
+                </div>
+                <a href="bai1.html">bài 1</a>
+                <a href="bai2.html">bài 2</a>
+                <a href="bai3.html">bài 3</a>
+                <a href="bai4.html">bài 4</a>
+                <a href="bai5.html">bài 5</a>
+                <a href="bai6.html">bài 6</a>
+                <a href="bai7.html">bài 7</a>
+                <a href="bai8.html">bài 8</a>
+        
+            </div>
+        </aside>
+    </main>
+  
+    <footer>
+        <p>được thiết kế bởi <em id="author"></em><br  />&COPY;2021</p>
+    </footer>
+</div>
+<script>
+    document.getElementById("author").innerHTML=name;
+</script>
+</body>
+</html>

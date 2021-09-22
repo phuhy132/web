@@ -1,0 +1,105 @@
+.container{
+    width: 1000px;
+    margin: 0px auto;
+    padding: 0px;
+}
+.container.header{
+    padding: 0px;
+    margin: 0px;
+}
+.container>header>img{
+width: 100%;
+}
+.container>nav{
+    height: 80px;
+    background-color: greenyellow;
+    padding: 0px 5px;
+    margin: 0px;
+    line-height: 40px;
+}
+.container>nav>a{
+    color: hotpink;
+    text-decoration: none;
+}
+.container>nav>a:hover{
+    text-transform: uppercase;
+}
+main{
+
+    min-height: 200px;
+   
+}
+main>article{
+    float: left;
+    width: 75%;
+}
+main>aside{
+    float: right;
+    width: 25%;
+}
+.container>footer{
+    clear: both;
+    height: 70px;
+    border-top: 3px dotted greenyellow;
+    background-color: hotpink;
+    text-align: center;
+}
+.containerCC{
+    margin-left: 30%;
+    background-color: rgb(146, 42, 42);
+    width: 300px;
+    height: fit-content;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 4px;
+}
+#kq{
+    margin-left: 9%;
+    width: 80%;
+    height: 120px;
+    border: 2px solid snow;
+    border-radius: 10px;
+}
+#solangiai{
+
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+.mySlides {display: none}
+.img_body {vertical-align: middle}
+.container_slide{
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+  font-size: 30px;
+  top: 146%;
+  color: white;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  width: auto;
+  padding: 16px;
+
+  }
+  .next {
+    right: 23%;
+    border-radius: 3px 0 0 3px;
+  }
+#hanghoa{
+    width: fit-content;
+    background-color: aqua;
+    text-align: center;
+}
+#hh{
+  margin-left: 40px;
+}
+td{
+    border: 3px solid red;
+}
+

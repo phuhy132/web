@@ -1,0 +1,53 @@
+.container{
+    width: 1000px;
+    margin: 0px auto;
+    padding: 0px;
+}
+.container.header{
+    padding: 0px;
+    margin: 0px;
+}
+.container>header>img{
+width: 100%;
+}
+.container>nav{
+    height: 80px;
+    background-color: greenyellow;
+    padding: 0px 5px;
+    margin: 0px;
+    line-height: 40px;
+}
+.container>nav>a{
+    color: hotpink;
+    text-decoration: none;
+}
+.container>nav>a:hover{
+    text-transform: uppercase;
+}
+main{
+
+    min-height: 200px;
+   
+}
+main>article{
+    float: left;
+    width: 75%;
+}
+main>aside{
+    float: right;
+    width: 25%;
+}
+.container>footer{
+    clear: both;
+    height: 70px;
+    border-top: 3px dotted greenyellow;
+    background-color: hotpink;
+    text-align: center;
+}
+.card{
+    border: 3px dotted palevioletred;
+}
+.title{
+    border-bottom: 3px dotted palevioletred;
+
+}

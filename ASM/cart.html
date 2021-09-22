@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div id="header_top">
+            <img src="images/logo_divine_pure_white.png" alt="" id="logo">
+            <img src="images/logo-divineshop.png" alt="" id="logo_name">
+            <input type="text" name="" id="timkiem" placeholder="Tìm kiếm">
+            <div class="search-btn">
+                <i class="fas fa-search"></i>
+            </div>
+          
+            
+        </div>
+    </header>
+    <div class="container">
+    <div class="container-title">
+        <h2 class="thanhtoan-title">Giỏ Hàng</h2>
+        <div class="cart-buy-more">
+            <a href="ASM2.html">
+                <div class="btnbuymore">TIếp tục mua hàng</div>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="thanh-toan-container" >
+        <div class="row" >
+            <img class="img_cart" src="images/bf1.png" alt="">
+            <span class="name_item">Battlefield 1</span>
+            <span class="item_status">Tình Trạng: <span class="con_hang">Còn hàng</span></span>
+            <span class="delete">xóa</span>
+            <span id="price" data-price="570000">570.000 VNĐ</span>
+            <input type="text" id="input_number"  onkeyup="hienthi(this)" name="" id="">
+            <input type="text" id="input_thanhtien"  onkeyup="hienthi(this)" name="" id="">
+        </div>
+        <div class="row" >
+            <img  class="img_cart" src="images/bf1.png" alt="">
+            <span class="name_item">Battlefield 1</span>
+            <span class="item_status">Tình Trạng: <span class="con_hang">Còn hàng</span></span>
+            <span class="delete">xóa</span>
+            <span id="price" data-price="570000">570.000 VNĐ</span>
+            <input type="text" id="input_number" onkeyup="hienthi()" name="" id="">
+        </div>
+        <!-- <div class="row" >
+            <div class="col-item ">
+                <div class="col-img">
+                    <img src="images/bf1.png" alt="">
+                </div>
+                <div class="col-text">
+                    <span>Battlefield 1</span>
+                    <br>
+                    <div class="item-status">
+                        Tình Trạng: 
+                        <span class="con-hang">Còn hàng</span>
+                    </div>
+                    
+                    <div class="delete">Xóa</div>
+                </div>
+                <div class="col-text-right">
+                    <span  id="price" data-price="570000">570.000 VNĐ</span>
+                </div>
+                <input type="number" id="soluong" onkeyup="tinhtong()">
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-item ">
+                <div class="col-img">
+                    <img src="images/anh3.jpg" alt="">
+                </div>
+                <div class="col-text">
+                    <span>Space Engineers</span>
+                    <br>
+                    <div class="item-status">
+                        Tình Trạng: 
+                        <span class="con-hang">Còn hàng</span>
+                    </div>
+                    
+                    <div class="delete">Xóa</div>
+                </div>
+                <div class="col-text-right">
+                    <span  id="price" data-price="180000">180.000 VNĐ</span>
+                </div>
+                <input type="number" id="soluong" onkeyup="tinhtong()">
+            </div>
+        </div>
+        -->
+    </div>
+    <div class="thongtinthanhtoan">
+        <div class="thongtin">
+            <div class="panel-group">
+                <div class="panel-default">
+                <div class="panel-heading">
+                    <h4><strong>MÃ GIỚI THIỆU</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="input-group">
+                        <input type="text" placeholder="Email hoặc Username người giới thiệu" name="" class="form-control" id="">
+                        <input type="button" value="sử dụng" class="btn-cotrol">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="panel-group">
+                <div class="panel-default">
+                <div class="panel-heading">
+                    <h4><strong>MÃ GIẢM GIÁ</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập mã giảm giá...." name="" class="form-control" id="">
+                        <input type="button" value="sử dụng" class="btn-cotrol">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="panel-group">
+                <div class="panel-default">
+                
+                <div class="panel-body">
+                    <div class="input-group">
+                        <div class="radio">                       
+                          <label for="seft">
+                            <input type="radio" id="seft" name="other-email"     value="seft">
+                            Mua cho chính mình</label>
+                    </div>
+                    <div class="radio">
+                          <label for="friend_email">
+                            <input type="radio" id="friend_email" name="other-email" onclick="anhienemail()">
+                            Tặng cho bạn bè</label><br>
+                    </div>
+                    
+                        <input type="text" placeholder="Nhập mã giảm giá...."  checked class="form-control none" id="email">
+                        <input type="button" value="sử dụng" class="btn-cotrol none" id="email-btn">
+                    
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="thanhtoan">
+            <div class="panel-group">
+                <div class="panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Thông tin thanh toán</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="row-bottom">
+                        <div class="ttsp-title">
+                            <div class="ttsp">
+                                <span class="text-gray">Thành tiền sản phẩm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="boder-netdut"></div>
+                        <div class="ttsp-title">
+                            <div class="ttsp">
+                                <span class="text-black">Tổng tiền</span>
+                            </div>
+                        </div>
+                        <div class="ttsp right">
+                            <span id="thanhtien" >Thành tiền của sản phẩm</span>
+                        </div>
+                        
+                        <a href="ASM_FINAL.html"><input type="url" class="charge" value="Thanh Toán"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <!-- <table  width='500'>
+        <tr><th><h1>Your Wheelbarrow</h1></th><tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Delete</th>
+        </tr> -->
+</body>
+<script src="giohang.js"></script>
+<script src="products.js"></script>
+        <!-- <script src="productClass.js"></script> -->
+        <script src="cartpay.js"></script>
+        <!-- <script src="xuly.js"></script> -->
+</html>

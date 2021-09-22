@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
+    <title>Document</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background:rgb(245, 191, 73);
+     height:100vh;
+     width:100%;
+    }
+    .box_clock{
+        position: relative;
+        height:120px;
+        width:400px;
+        background:#ffff;
+        box-shadow: 0 15px 25px #e6f58f,
+                    inset 0 0 10px #767676;
+                    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #hour{
+        position: relative;
+        height:90%;
+        width:100px;
+        background: rgb(137, 141, 101);
+        color:#ffff;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size: 60px;
+
+    }
+    #m{
+        position: relative;
+        height:90%;
+        width:100px;
+        background: rgb(151, 151, 113);
+        color:#ffff;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size: 60px;
+
+    }
+    #s{
+        position: relative;
+        height:90%;
+        width:100px;
+        background: rgb(144, 151, 111);
+        color:#ffff;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size: 60px;
+
+    }
+    span{
+        width: 20px;
+        font-size:50px;
+    }
+    h2{
+        margin-top: 20px;
+        color:#fff;
+    }
+    .group__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        height:40px;
+        width: 100px;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        margin: 2px;
+    }
+</style>
+</head>
+<body ng-app="b2" ng-controller="ctr1">
+    <div class="groub__btn">
+        <button ng-click="continueTg()">Start</button>
+        <button ng-click="stopTg()">Stop</button>
+        <button ng-click="study()">Xem bài học</button>
+    </div>
+    <section class="box_clock">
+        <div id="hour"></div>
+        <span>:</span>
+        <div id="m"></div>
+        <span>:</span>
+        <div id="s"></div>
+  </section>
+<script src="bai2b.js"></script>
+</body>
+</html>

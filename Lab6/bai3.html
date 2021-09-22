@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1042</title>
+    <script >
+        var name = "Nguyễn Phú Hy";
+        var num= "PS9395";
+        var birth = "04/10/2000";
+        
+            </script>
+        
+    </script>
+    <link rel="stylesheet" href="lab.css">
+  <style>
+      form {
+    width: 600px;
+    margin:100px auto;
+    border: 1px solid darkslategrey;
+    box-shadow: 2px 2px 1px rgb(253, 209, 114);
+    border-radius: 5px;
+    font-size: 1.2em;
+    transform: rotate(-10deg);
+   }
+   label { width: 120px; display: inline-block;}
+   p, h2 { margin-left: 15px;} 
+   input[id], select {
+    padding: 8px;
+    width: 420px;
+    background-color: rgb(248, 133, 39);
+    border: none;
+   }
+   button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: darkgoldenrod;
+   }
+  </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>Môn học java cơ sở</div>
+        <img src="../Javascript-shopping-cart-1.png" alt="">
+    </header>
+    <nav>
+        <a href="../indelx.html"> Trang chủ</a>       
+        <a href="Lab1/lab2.html">Lab2</a>
+        <a href="Lab1/lab3.html">Lab3</a>
+        <a href="Lab1/lab4.html">Lab4</a>
+    </nav>
+    <main>
+        <article>
+            <form>
+                <p> <label>Sản phẩm</label> <input id="tensp" placeholder="Nhập tên sản phẩm"/> </p > <p> <label>Loại</label>
+                <select id="loai">
+                <option value="">Chọn loại sản phẩm</option>
+                <option value="DT">Điện thoại</option>
+                <option value="MT">Máy tính</option>
+                </select>
+                </p>
+                <p> <label>Đơn giá</label> <input id="gia" placeholder="Nhập đơn giá" /> </p>
+                <p> <label>Nơi nhận hàng</label>
+                <input type="radio" name="diachi" onclick="hienthi(false)">Nội thành
+                <input type="radio" name="diachi" onclick="hienthi(true)">Ngoại thành
+                </p> 
+                <p id="vc"><label>Phí vận chuyển</label> <input id="phi_vc" value="100000"></p> 
+                <p> <label></label> <button type="button" onclick="return kiemtra()">Đặt mua</button></p>
+                <hr>
+                <div id="kq"></div>
+               </form>
+            <script>
+             function hienthi(v){
+    vc =document.getElementById("vc");
+    vc.style.display = (v== true)? "" : "none";
+}
+function kiemtra(){
+    thanhcong = true;
+    thongbao = "";
+    var sp = document.getElementById("tensp");
+    if(sp.value.length == 0){
+    thongbao+=" Vui Lòng Nhập Tên Sản Phẩm<br>";
+    thanhcong =false;
+}
+var gia =document.getElementById("gia");
+if(sp.value == ""){
+    thongbao+=" Bạn chưa nhập giá <br>";
+    thanhcong =false;
+   }if (isNaN(gia.value) == true){
+        thongbao+=" Bạn cần nhập giá là số nhé <br>";
+        thanhcong =false;
+    }if (isNaN(gia.value) <=0){
+        thongbao+=" Bạn phải nhập giá là số dương <br>";
+        thanhcong =false;
+    }
+    var loai =document.getElementById("loai");
+    if(loai.value == ""){
+        thongbao+=" Chọn 1 loại sản phẩm đi <br>";
+        thanhcong =false;
+    }
+var radios = document.getElementsByName("diachi");
+if(radios[0].checked == false && radios[1].checked == false){
+    thongbao+=" Vui lòng chọn nơi giao hàng";
+    thanhcong =false;
+}
+    if(thongbao== "") thongbao="Nhập đúng dữ liệu";
+    document.getElementById("kq").innerHTML=thongbao;
+    return thanhcong;
+}
+
+            </script>
+        </article>
+        <aside>
+            <div class="card">
+                <div class="title">Thông tin cá nhân</div>
+                <div>
+                    <p><span>Họ tên:</span><b id="name">
+                        <script>
+                            document.write(name);
+                        </script>
+                    </b></p>
+                    <p><span>Mã SV</span><b id="num">
+                        <script>
+                            document.write(num);
+                        </script>
+                    </b></p>
+                    <p><span>Ngày sinh:</span><b id="birth">
+                        <script>
+                            document.write(birth);
+                        </script>
+                    </b></p>
+                </div>
+                <a href="bai1.html">bài 1</a>
+                <a href="bai2.html">bài 2</a>
+                <a href="bai3.html">bài 3</a>
+                <a href="bai4.html">bài 4</a>
+                <a href="bai5.html">bài 5</a>
+                <a href="bai6.html">bài 6</a>
+        
+            </div>
+        </aside>
+    </main>
+  
+    <footer>
+        <p>được thiết kế bởi <em id="author"></em><br  />&COPY;2021</p>
+    </footer>
+</div>
+<script>
+    document.getElementById("author").innerHTML=name;
+</script>
+</body>
+</html>

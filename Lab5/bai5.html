@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1042</title>
+    <script></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    
+    <link rel="stylesheet" href="lab5.css">
+    <script >
+        var name = "Nguyễn Phú Hy";
+        var num= "PS9395";
+        var birth = "04/10/2000";
+        
+            </script>
+            <style>
+                .taicontainer { 
+          width:700px; margin:auto; border:0.5px solid black; background:darkkhaki;}
+         .row { display:flex; line-height: 36px; text-align: center;}
+         .row > div { background:wheat; width: 25%; border:0.5px solid black; }
+         
+         button { width: 100px; height: 35px; }
+         .head { padding:10px; }
+         .head span { float:right; font-style:italic;}
+            </style>
+</head>
+<body >
+<div class="container">
+    <header>
+        <div>Môn học java cơ sở</div>
+        <img src="../Javascript-shopping-cart-1.png" alt="">
+    </header>
+    <nav>
+        <a href="../indelx.html"> Trang chủ</a>       
+        <a href="Lab1/lab2.html">Lab2</a>
+        <a href="Lab1/lab3.html">Lab3</a>
+        <a href="Lab1/lab4.html">Lab4</a>
+    </nav>
+    <main>
+        <article>
+            <div class="taicontainer">
+                <div class="head">TIỀN VÉ DU LỊCH HẠ LONG <span id="ngay">Hiện ngày</span></div>
+                    <header class="row">        
+                        <div>Gia đình</div>
+                        <div>Số người lớn</div>
+                        <div>Số trẻ em</div>
+                        <div>Tiền</div>
+                    </header>
+                    <div class="row">
+                        <div>Đào kho Báu</div>
+                        <div class="nl" contenteditable="true"onkeyup="tinhtien(this)" onkeyup="tien(this)">11</div>
+                        <div class="te" contenteditable="true"onkeyup="tinhtien(this)" onkeyup="tien(this)">3</div>
+                        <div class="tien">SoTien</div>
+                    </div>
+                    <div class="row">
+                        <div>Đỗ đạt Cao</div>
+                        <div class="nl" contenteditable="true"onkeyup="tinhtien(this)" onkeyup="tien(this)">22</div>
+                        <div class="te" contenteditable="true"onkeyup="tinhtien(this)" onkeyup="tien(this)">2</div>
+                        <div class="tien">SoTien</div>
+                    </div>
+                    <div class="row">
+                        <div>Mai anh Tới</div>
+                        <div class="nl"contenteditable="true"onkeyup="tinhtien(this)" onkeyup="tien(this)">33</div>
+                        <div class="te" contenteditable="true" onkeyup="tinhtien(this)" onkeyup="tien(this)">4</div>
+                        <div class="tien" >SoTien</div>
+                    </div>
+                    <div class="row">
+                        <div>Phạm kỷ Luật</div>
+                        <div class="nl" contenteditable="true" onkeyup="tinhtien(this)" onkeyup="tien(this)">44</div>
+                        <div class="te" contenteditable="true"  onkeyup="tinhtien(this)"onkeyup="tien(this)">6</div>
+                        <div class="tien">SoTien</div>
+                    </div>
+                    <div class="row">
+                        <div>Mai anh Bảo</div>
+                        <div class="nl" contenteditable="true" onkeyup="tinhtien(this)" onkeyup="tien(this)">55</div>
+                        <div class="te" contenteditable="true" onkeyup="tinhtien(this)" onkeyup="tien(this)">7</div>
+                        <div class="tien">SoTien</div>
+                    </div>
+                    <footer class="row">
+                        <div>Tổng</div>
+                        <div id="tongnl"></div>
+                        <div id="tongte"></div>
+                        <div id="tongtien" ></div>    
+                    </footer>
+                    <div class="row"> <button onclick="tinhtien()">Tính</button> <button>Ẩn Hiện</button> </div>
+                </div>
+                <script>
+                    function tinhtien(){
+                        var nguoilon_arr=document.getElementsByClassName("nl");
+                        var treem_arr=document.getElementsByClassName("te");
+                        var sotien_arr=document.getElementsByClassName("tien")
+                        var tongnguoilon=0,tongtreem=0,tongtien=0
+                        for(var i=0;i<nguoilon_arr.length;i++){
+                            var songuoilon =nguoilon_arr[i].innerText;
+                            var sotreem=treem_arr[i].innerText;
+                            songuoilon=parseInt(songuoilon);
+                            sotreem=parseInt(sotreem);
+                            tongnguoilon+=songuoilon
+                            tongtreem+=sotreem
+                            t=songuoilon*1000000+sotreem*100000
+                            tongtien=+t;
+                            sotien_arr[i].innerText=t
+        
+                        }
+                        document.getElementById("tongnl").innerText=tongnguoilon;
+                        document.getElementById("tongte").innerText=tongtreem;
+                        document.getElementById("tongtien").innerText=tongtien;
+                    }
+                    function tien(obj){
+                        var row = obj.parentNode
+                        sonl=row.children[1].innerText;
+                        sote=row.children[1].innerText;
+                        t=sonl*1111111+sote*2121212121
+                        row.children[1].innerText=t
+                    }
+                </script>
+        </article>
+        <aside>
+            <div class="card">
+                <div class="title">Thông tin cá nhân</div>
+                <div>
+                    <p><span>Họ tên:</span><b id="name">
+                        <script>
+                            document.write(name);
+                        </script>
+                    </b></p>
+                    <p><span>Mã SV</span><b id="num">
+                        <script>
+                            document.write(num);
+                        </script>
+                    </b></p>
+                    <p><span>Ngày sinh:</span><b id="birth">
+                        <script>
+                            document.write(birth);
+                        </script>
+                    </b></p>
+                </div>
+                <a href="bai1.html">bài 1</a>
+                <a href="bai2.html">bài 2</a>
+                <a href="bai3.html">bài 3</a>
+                <a href="bai4.html">bài 4</a>
+                <a href="bai5.html">bài 5</a>
+                <a href="bai6.html">bài 6</a>
+                <a href="bai7.html">bài 7</a>
+                <a href="bai8.html">bài 8</a>
+        
+            </div>
+        </aside>
+    </main>
+  
+    <footer>
+        <p>được thiết kế bởi <em id="author"></em><br  />&COPY;2021</p>
+    </footer>
+</div>
+<script>
+    document.getElementById("author").innerHTML=name;
+</script>
+</body>
+</html>

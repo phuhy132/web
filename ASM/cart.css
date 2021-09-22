@@ -1,0 +1,355 @@
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    height: fit-content;
+    /* min-height: 500px; */
+    height: 1000px;
+}
+#header_top{
+    width: 100%;
+    height: 80px;
+background-color: rgb(96, 201, 243);
+}
+#logo{
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    margin-left: 300px;
+}
+#logo_name{
+    top: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+}
+#timkiem{
+    position: relative;
+    border: none;
+    width: 422px;
+    height: 30px;
+    bottom:17px;
+    left: 40px;
+    z-index:5;
+}
+.container-title{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.cart-buy-more{
+    text-decoration: none;
+    margin-left: auto;
+    display: inline-flex;
+}
+.input_thanhtien{
+    position: relative;
+    left: 150px;
+}
+.btnbuymore{
+    width: 150px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #21beff;
+    color: #fff;
+    padding: 8px 0;
+    cursor: pointer;
+    font-family: 'Roboto-Condensed-Bold';
+    background-color: #21beff;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.thanh-toan-container{
+    background-color: #fff;
+    padding: 35px 40px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    /* min-height: 500px; */
+    height: auto;
+    
+}
+
+/* .bordertop{
+    
+    border-top: 1px solid #dddddd;
+} */
+.row{
+    border: 1px solid rgb(199, 197, 197);
+    margin: 0;
+    min-height: 123px;
+    
+}
+.img_cart{
+    position: relative;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 186.5px;
+    height: 87.16px;
+    
+}
+.name_item{
+    position: relative;
+    bottom: 90px;
+    font-size: 15px;
+}
+.item_status{
+    position: relative;
+    bottom: 65px;
+    right: 80px;
+    font-size: 15px;
+}
+.con_hang{
+color: rgb(37, 211, 37);
+font-size: 15px;
+}
+.delete{
+    font-size: 15px;
+    color: red;
+    cursor: pointer;
+    bottom: 44px;
+    right: 217px;
+    position: relative;
+}
+#price{
+    position: relative;
+    float: right;
+    right: 150px;
+    top:20px;
+    font-weight: bold;
+}
+#input_number{
+    text-align: center;
+    position: relative;
+    top: 17px;
+    float: right;
+    width: 50px;
+    height: 30;
+}
+/* .col-item{
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    /* padding-right: 15px; 
+    padding-left: 15px;
+} */
+/* .col-img{
+    width: 25%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+} */
+/* .col-text{
+    width: 41.66666667%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#price{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.item-status{
+    padding: 3px 0;
+    font-size: 15px;
+}
+.con-hang {
+    color: green;
+}
+.delete{
+    color: red;
+    cursor: pointer;
+}
+.col-text-right{
+    width: 16.66666667%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: right;
+    top: 30px;
+}
+
+#soluong{
+    top: 30px;
+    position: relative;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+} */
+.thongtinthanhtoan{
+    width: 100%;
+   
+    height: auto;
+}
+.thongtin{
+    width: 50%;
+    height: auto;
+   
+    float: left;
+}
+.panel-group{
+    margin-bottom: 20px;
+}
+.panel-default{
+    margin-bottom: 0;
+    border-radius: 4px;
+    border-color: #ddd;
+    background-color: #fff;
+    border: 1px solid rgb(199, 197, 197);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+.panel-heading{
+    border-bottom: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px 15px;
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.panel-body {
+    padding: 15px;  
+    display: table;
+}
+h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+.input-group{
+    position: relative;
+    display: table;
+    
+}
+.form-control{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 346px;
+
+    margin-bottom: 0;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn-cotrol{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+    opacity: 1;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    background-image: none;
+    height: 48px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #21beff;
+    border-color: #21beff;
+}
+.radio{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.none{
+    display: none;
+}
+.thanhtoan{
+    width: 50%;
+    height: auto;
+   
+    float: left;
+}
+.ttsp-title{
+    margin-bottom: 8px;
+    padding: 0;
+    width: 482px;
+ display: inline-block;
+    position: relative;
+    min-height: 1px;
+}
+.ttsp{
+    padding: 0;
+    width: 50%;
+}
+.right{
+    position: relative;
+    bottom: 28px;
+    left: 65px;
+    float: right;
+}
+.row-bottom{
+    margin: 0;
+}
+.text-gray{
+    color: #8e9098;
+    font-size: 15px;
+}
+.boder-netdut{
+    width: 95%;
+   border: 1px #e2e4ec dashed;  
+}
+.text-black{
+    font-size: 35px;
+}
+.charge{
+    position: relative;
+    width: 97%;
+    height: 37px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e53935;
+    border-color: #e53935;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.charge:hover{
+    background-color: #ee5a58;
+    border-color: #ee5a58;
+}
